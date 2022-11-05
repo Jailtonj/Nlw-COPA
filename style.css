@@ -30,7 +30,12 @@ ul{
 }
 
 body {
-  background: #121214 var(--bg) no-repeat top center/cover;
+  background: #1e1e1e;
+  background-image: var(--bg);
+  background-size: 100%;
+  background-position-x: top;
+  background-position-y: top;
+  background-repeat: no-repeat;
 }
 
 body * {
@@ -145,10 +150,11 @@ header {
   }
 }
 
-@media (min-width: 400px) {
-  #cards {
-    max-width: 670px;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
+@media (min-width: 1024px) {
+    #cards {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr;
+        flex-direction: row;
+        max-width: fit-content;
+    }
+}  
