@@ -11,6 +11,11 @@
   --bg: url(./assets/bg-yellow.svg);
 }
 
+/* Cor do nome dos países */
+figcaption {
+  color: white;
+}
+
 body.blue {
   --card-title-border-color: #338af3;
   --card-color-primary: #338af3;
